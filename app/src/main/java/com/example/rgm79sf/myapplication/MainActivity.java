@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonPushMe;
+    private ImageView imageAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonPushMe.setText("push!!");
-                buttonPushMe = (Button) findViewById(R.id.btn);
+                imageAndroid.setImageResource(R.drawable.droid2);
+
+
             }
         });
-
+    imageAndroid = (ImageView) findViewById(R.id.iv_android);
 
     }
 
